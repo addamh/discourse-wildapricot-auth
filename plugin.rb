@@ -35,6 +35,7 @@ after_initialize do
 
     option :token_params, {
       :scope => 'contacts_me',
+      redirect_uri: 'https://forum.arkansasearlychildhood.org/auth/wildapricot/callback',
       :headers => {
         'Authorization' => "Basic #{authorization_header}"
       }
